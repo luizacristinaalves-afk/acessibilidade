@@ -1,0 +1,306 @@
+/* ==========================================
+  1. ESTILOS GERAIS E ACESSIBILIDADE BASE
+  ========================================== */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px; /* Fonte ampliada por padrão */
+    line-height: 1.6;
+    background-color: #816924;
+    color: #1A1A1A; /* Alto contraste */
+    padding-bottom: 40px;
+ }
+ 
+ 
+ /* Destaque visual ao navegar por teclado ou clique */
+ :focus {
+    outline: 4px solid #ad2424;
+    outline-offset: 4px;
+ }
+ 
+ 
+ /* ==========================================
+   2. CABEÇALHO (HEADER)
+   ========================================== */
+ header {
+    background-color: #4c00ff7c; /* Azul escuro - Transmite segurança */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 6px solid #5d1f7ab4;
+ }
+ 
+ 
+ header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+ }
+ 
+ 
+ header p {
+    font-size: 24px;
+ }
+ 
+ 
+ /* ==========================================
+   3. CONTEÚDO PRINCIPAL (MAIN)
+   ========================================== */
+ main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+ }
+ 
+ 
+ .introducao {
+    background-color: #f5cb0e36;
+    border-left: 8px solid #4c00ffa4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+ }
+ 
+ 
+ .introducao h2 {
+    font-size: 26px;
+    color: #000000;
+    margin-bottom: 10px;
+ }
+ 
+ 
+ /* ==========================================
+   4. CARTÕES DE DICAS DE SEGURANÇA
+   ========================================== */
+ .secao-dicas {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+ }
+ 
+ 
+ .cartao-dica {
+    background-color: #dfb0ff57;
+    border: 3px solid #CCCCCC;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ 
+ .cartao-dica h3 {
+    font-size: 26px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+ }
+ 
+ 
+ .icone {
+    font-size: 32px;
+ }
+ 
+ 
+ .cartao-dica p {
+    font-size: 22px;
+    margin-bottom: 15px;
+ }
+ 
+ 
+ .alerta-seguranca {
+    background-color: #f5cb0e36;
+    color: #000000;
+    padding: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    border-left: 6px solid #c4aaff;
+ }
+ 
+ 
+ /* ==========================================
+   5. BOTÃO DE EMERGÊNCIA / AJUDA
+   ========================================== */
+ .secao-ajuda {
+    margin-top: 40px;
+    background-color: #FFFFFF;
+    border: 3px solid #ff0800;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+ }
+ 
+ 
+ .secao-ajuda h2 {
+    color: #df150e;
+    font-size: 28px;
+    margin-bottom: 15px;
+ }
+ 
+ 
+ .btn-ajuda {
+    display: inline-block;
+    background-color: #ff0800;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+ }
+ 
+ 
+ .btn-ajuda:hover,
+ .btn-ajuda:focus {
+    background-color: #ff0601;
+ }
+ 
+ 
+ /* ==========================================
+   6. RODAPÉ (FOOTER)
+   ========================================== */
+ footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 18px;
+    color: #555555;
+ }
+ 
+ 
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+ }
+ /* Banner e Seção Inicial */
+ .hero-banner {
+    background-color: #4c00ff7c;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+ }
+ .hero-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+ }
+ .hero-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+ }
+ .btn-ajuda {
+    background-color: #f8d94fe1;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+ }
+ .btn-ajuda:hover {
+    background-color: #218838;
+ }
+ /* Seções de Conteúdo */
+ .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+ }
+ section {
+    background-color: rgba(255, 255, 255, 0.589);
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ }
+ h2 {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 8px;
+ }
+ ul {
+    padding-left: 20px;
+ }
+ li {
+    margin-bottom: 10px;
+    font-size: 1.5 rem;
+ }   
+ 
+ 
+ .controle-fonte {
+    margin-top: 25px;
+ 
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ 
+ 
+    flex-wrap: wrap;
+ }
+ 
+ 
+ .controle-fonte span {
+    font-size: 20px;
+    font-weight: bold;
+ }
+ 
+ 
+ .botao-fonte {
+    display: inline-flex;
+ 
+ 
+    justify-content: center;
+    align-items: center;
+ 
+ 
+    width: 55px;
+    height: 50px;
+ 
+ 
+    background-color: rgb(241, 241, 241);
+    color: #000307;
+ 
+ 
+    border: 3px solid rgb(132, 0, 255);
+    border-radius: 10px;
+ 
+ 
+    text-decoration: none;
+ 
+ 
+    font-size: 22px;
+    font-weight: bold;
+ }
+ 
+ 
+ .botao-fonte:hover {
+    background-color: #e8f0fe;
+ }
+ 
+ 
+ .botao-fonte:focus {
+    outline: 4px solid #ffcc00;
+    outline-offset: 3px;
+ }
+ 
+ 
+ 
